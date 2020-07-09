@@ -1,5 +1,33 @@
-doctype html
-html
-  head
-    title
-  body
+//- Jay Patel
+//- 200426063
+//- project.pug = A Page to show Projects made by me uses bootstrap models
+extends layout
+block content
+ button.btn.btn-primary(type='button' data-toggle='modal' data-target='#project1' style="width: 100%; height: 60px;")
+   | Portfolio using JavaScript Frameworks
+
+ #project1.modal
+   .modal-dialog
+     .modal-content
+       .modal-header
+         h4.modal-title Portfolio using JavaScript Frameworks
+         button.close(type='button' data-dismiss='modal') &times;
+       .modal-body
+         | This was a college project in which i used NodeJS, ExpressJS, Pug Template Engine to make a self portfolio webapp  
+       .modal-footer
+         button.btn.btn-danger(type='button' data-dismiss='modal') Close 
+ br
+ br
+ button.btn.btn-primary(type='button' data-toggle='modal' data-target='#project1' style="width: 100%; height: 60px;")
+   | Tic Tac Toe using Java
+
+ #project1.modal
+   .modal-dialog
+     .modal-content
+       .modal-header
+         h4.modal-title Tic Tac Toe using Java
+         button.close(type='button' data-dismiss='modal') &times;
+       .modal-body
+         | This was a college project to make a Tic Tac Toe game with GUI using JavaFX in which we used Database to Create Users, Store Results and Make a Cheerboard for the winners.  
+       .modal-footer
+         button.btn.btn-danger(type='button' data-dismiss='modal') Close 

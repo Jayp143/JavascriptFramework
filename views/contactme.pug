@@ -1,0 +1,27 @@
+//- Jay Patel
+//- 200426063
+//- contactme.pug = This page is made using bootstrap forms and glyphicons
+extends layout
+block content
+ div()
+ .container(style='width: 60%')
+   h2 Contact Me
+   form
+     .form-group
+       label(for='email') Email:
+       input#email.form-control(type='email' placeholder='Enter email' name='email')
+     .form-group
+       label(for='pwd') Subject:
+       input#pwd.form-control(type='password' placeholder='Enter password' name='password')
+     .form-group
+       label(for='Message') Message:
+       input.form-control(type='textarea' name='Message' placeholder='Your Message')
+     button.btn.btn-primary(type='submit') Send Message
+ hr
+ .container(style='width: 60%')
+   span.glyphicon.glyphicon-earphone
+   |  +1 (705)-970-5155 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   span.glyphicon.glyphicon-home
+   |  40 Blair Cr. , L4M 5V8 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   span.glyphicon.glyphicon-envelope
+   |  jayp11827@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

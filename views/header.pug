@@ -1,8 +1,40 @@
+//- Jay Patel
+//- 200426063
+//- footer.pub = partial view of template to show header on all pages which includes navbar and all links to bootstrap
 doctype html
 html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/main.css')
-    link(href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk", crossorigin="anonymous")
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js')
+
   body
-    block content
+  nav.navbar.navbar-inverse
+    .container-fluid
+      .navbar-header
+        a.navbar-brand(href='/') Jay Patel
+      ul.nav.navbar-nav
+        li
+          a(href='/') 
+            span.glyphicon.glyphicon-home 
+            |  Home
+        li
+          a(href='/project') 
+            span.glyphicon.glyphicon-th-list
+            |  Projects
+        li
+          a(href='/services') 
+            span.glyphicon.glyphicon-th
+            |  Services
+      ul.nav.navbar-nav.navbar-right
+        li
+          a(href='/about')
+            span.glyphicon.glyphicon-user
+            |  About
+        li
+          a(href='/contactme')
+            span.glyphicon.glyphicon-envelope
+            |  Contact
+
